@@ -1,39 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template project</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffeeroasters</title>
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link
+        rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
+    </head>
+    <body>
 
-  <!-- ======== HEADER START ======== -->
-  <header class="site-header">
+        <!-- ======== HEADER START ======== -->
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header__inner">
+                    <a class="logo" href="./index.html">
+                        <img class="logo__img" src="./images/mobile-logo.svg" alt="Coffeeroaster's logo">
+                    </a>
+                    <button class="site-header__burger">
+                      <img class="site-header__burger-img" src="./images/burger.svg" alt="">
+                    </button>
+                    <nav class="sitenav">
+                        <ul class="sitenav__list">
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">HOME</a>
+                            </li>
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">ABOUT US</a>
+                            </li>
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">Create your plan</a>
+                            </li>
+                        </ul>
+                    </nav>
 
-  </header>
-   <!-- ======== HEADER FINISH ======== -->
+                    <div class="site-header__hidden-list">
+                        <nav class="sitenav">
+                            <ul class="sitenav__list">
+                                <li class="sitenav__item">
+                                    <a class="sitenav__link" href="#">Home</a>
+                                </li>
+                                <li class="sitenav__item">
+                                    <a class="sitenav__link" href="#">About Us</a>
+                                </li>
+                                <li class="sitenav__item">
+                                    <a class="sitenav__link" href="#">Create your plan</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ======== HEADER FINISH ======== -->
+
+        <!-- ======== SITE MAIN START ======== -->
+        <main
+            class="site-main">
+
+            <!-- ======== HERO START ======== -->
+            <section class="hero">
+              <div class="container">
+                <div class="hero__wrap">
+                  <div class="hero__text-wrap">
+                    <h1 class="hero__title">Great coffee made simple.</h1>
+                    <p class="hero__descr">Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
+                    <a class="create-plan" href="#">Create your plan</a>
+                  </div>
+                  </div>
+              </div>
+            </section>
+            <!-- ======== HERO FINISH ======== -->
+
+        </main>
+        <!-- ======== SITE MAIN FINISH ======== -->
+
+        <!-- ======== SITE FOOTER FINISH ======== -->
+        <footer class="site-footer"></footer>
+        <!-- ======== SITE FOOTER FINISH ======== -->
+
+        <!-- =========== OVERLAY =========== -->
+            <div class="overlay"></div>
+        <!-- =========== OVERLAY =========== -->
 
 
-  <!-- ======== SITE MAIN START ======== -->
-  <main class="site-main">
-
-    <!-- ======== HERO START ======== -->
-    <section class="hero">
-
-    </section>
-    <!-- ======== HERO FINISH ======== -->
-
-  </main>
-  <!-- ======== SITE MAIN FINISH ======== -->
-
-  <!-- ======== SITE FOOTER FINISH ======== -->
-  <footer class="site-footer">
-
-  </footer>
-  <!-- ======== SITE FOOTER FINISH ======== -->
-</body>
+      <script src="./js/main.js"></script>
+    </body>
 </html>
