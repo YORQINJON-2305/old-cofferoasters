@@ -124,6 +124,17 @@ a {
   justify-content: space-between;
 }
 
+.logo{
+  width: 163px;
+  height: 18px;
+}
+
+.large-logo{
+  width: 236px;
+  height: 26px;
+  display: none;
+}
+
 .site-header__burger {
   display: flex;
   align-items: center;
@@ -170,7 +181,7 @@ a {
   top: 81px;
   z-index: -1;
   width: 100%;
-  background-color: #FEFCF7;
+  /* background-color: #FEFCF7; */
   transform: translateY(-180%);
   transition: transform 0.3s ease;
 }
@@ -297,6 +308,24 @@ only screen and (min-resolution: 2dppx) {
   }
 }
 
+@media only screen and (min-width: 480px){
+  .hero__wrap{
+    background-image: url("../images/tablet-hero.jpg");
+  }
+
+  
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+  .hero__wrap {
+    background-image: url("../images/tablet-hero@2x.jpg");
+  }
+}
+}
+
 @media only screen and (min-width: 625px) {
 
   .hero__wrap {
@@ -325,6 +354,15 @@ only screen and (min-resolution: 2dppx) {
 }
 
 @media only screen and (min-width: 768px) {
+
+  .logo{
+    display: none;
+  }
+
+  .large-logo{
+    display: block;
+  }
+
   .sitenav {
     display: block;
   }
@@ -347,16 +385,41 @@ only screen and (min-resolution: 2dppx) {
     font-size: 48px;
     line-height: 48px;
   }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    .hero__wrap {
+      background-image: url("../images/tablet-hero@2x.jpg");
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1000px){
+  .hero__wrap {
+    background-image: url("../images/desktop-hero.jpg");
+  }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    .hero__wrap {
+      background-image: url("../images/desktop-hero@2x.jpg");
+    }
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
-  .sitenav {
-    display: block;
-  }
-
-  .site-header__burger {
-    display: none;
-  }
 
   .hero__wrap {
     max-width: 1280px;
@@ -374,4 +437,17 @@ only screen and (min-resolution: 2dppx) {
     font-size: 72px;
     line-height: 72px;
   }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    .hero__wrap {
+      background-image: url("../images/desktop-hero@2x.jpg");
+    }
+  }
+
 }
