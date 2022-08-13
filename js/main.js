@@ -1,12 +1,12 @@
 var burgerBtn = document.querySelector(".site-header__burger");
 var burgerBtnImg = document.querySelector(".site-header__burger-img");
-var showList = document.querySelector(".site-header__hidden-list");
+var showList = document.querySelector(".sitenav");
 var showOverlay = document.querySelector(".overlay");
 
 var icon = true
 
 burgerBtn.addEventListener("click", function(){
-    showList.classList.toggle("site-header__hidden-list--show")
+    showList.classList.toggle("sitenav--active")
     showOverlay.classList.toggle("overlay--show")
 
     if(icon){
